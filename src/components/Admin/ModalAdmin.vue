@@ -197,7 +197,7 @@
 export default {
   data() {
     return {
-      pathImg: "http://localhost:3000/images/",
+      pathImg: "https://backend-bkk-2022.herokuapp.com/images/",
     };
   },
   props: {

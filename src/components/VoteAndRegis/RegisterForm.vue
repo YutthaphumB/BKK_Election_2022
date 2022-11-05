@@ -371,7 +371,7 @@ export default {
           const formData = new FormData();
           formData.append("file", this.imageCard, "idCard" + this.idCard + ".jpg");
           axios
-            .post("http://localhost:3000/upload", formData)
+            .post("https://backend-bkk-2022.herokuapp.com/upload", formData)
             .then((res) => {
               console.log(res);
             })
@@ -381,7 +381,7 @@ export default {
           const formData2 = new FormData();
           formData2.append("file", this.imageVoter, "voter" + this.idCard + ".jpg");
           axios
-            .post("http://localhost:3000/upload", formData2)
+            .post("https://backend-bkk-2022.herokuapp.com/upload", formData2)
             .then((res) => {
               console.log(res);
             })
@@ -389,7 +389,7 @@ export default {
               console.log(err);
             });
           axios
-            .post(`http://localhost:3000/voter`, {
+            .post(`https://backend-bkk-2022.herokuapp.com/voter`, {
               idCard: this.idCard,
               walletId: this.currentAccount,
               firstname: this.firstName,

@@ -13,7 +13,7 @@ const mutations = {
 
 const actions = {
   async getPostCandidate({ commit }) {
-     await axios.get("http://localhost:3000/candidate")
+     await axios.get("https://backend-bkk-2022.herokuapp.com/candidate")
      .then(response => {
         commit('SET_CANDIDATE', response.data)
     })
